@@ -1,0 +1,81 @@
+{
+	"name": "xssencode",
+	"displayName": "xssencode",
+	"description": "Converts characters from one encoding to another using a transformation. This tool will help you encode payloads in testing sql injections, XSS holes and site security.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.51.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:xssencode.StringToBase64",
+		"onCommand:xssencode.Base64ToString",
+		"onCommand:xssencode.StringToHex",
+		"onCommand:xssencode.HexToString",
+		"onCommand:xssencode.StringToEncodedUrl",
+		"onCommand:xssencode.StringToEncodedUrlAllCharacters",
+		"onCommand:xssencode.EncodedUrlToString",
+		"onCommand:xssencode.IPv4ToNumber",
+		"onCommand:xssencode.NumberToIPv4"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToBase64",
+				"title": "String to Base64"
+			}, {
+				"category": "XssEncode",
+				"command": "xssencode.Base64ToString",
+				"title": "Base64 to String"
+			}, {
+				"category": "XssEncode",
+				"command": "xssencode.StringToHex",
+				"title": "String to Hex"
+			}, {
+				"category": "XssEncode",
+				"command": "xssencode.HexToString",
+				"title": "Hex to String"
+			}, {
+				"category": "XssEncode",
+				"command": "xssencode.StringToEncodedUrl",
+				"title": "String to Encoded URL"
+			}, {
+				"category": "XssEncode",
+				"command": "xssencode.StringToEncodedUrlAllCharacters",
+				"title": "String to Encoded URL All Characters"
+			}, {
+				"category": "XssEncode",
+				"command": "xssencode.EncodedUrlToString",
+				"title": "Encoded URL to String"
+			}, {
+				"category": "XssEncode",
+				"command": "xssencode.IPv4ToNumber",
+				"title": "IPv4 to Number"
+			}, {
+				"category": "XssEncode",
+				"command": "xssencode.NumberToIPv4",
+				"title": "Number to IPv4"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.51.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.0",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.9.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"typescript": "^4.0.2",
+		"vscode-test": "^1.4.0"
+	}
+}
