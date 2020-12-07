@@ -23,6 +23,8 @@
 	"activationEvents": [
 		"onCommand:xssencode.StringToBase64",
 		"onCommand:xssencode.Base64ToString",
+		"onCommand:xssencode.StringToBase32",
+		"onCommand:xssencode.Base32ToString",
 		"onCommand:xssencode.StringToHex",
 		"onCommand:xssencode.HexToString",
 		"onCommand:xssencode.StringToEncodedUrl",
@@ -47,6 +49,16 @@
 				"category": "XssEncode",
 				"command": "xssencode.Base64ToString",
 				"title": "Base64 to String"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToBase32",
+				"title": "String to Base32"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.Base32ToString",
+				"title": "Base32 to String"
 			},
 			{
 				"category": "XssEncode",

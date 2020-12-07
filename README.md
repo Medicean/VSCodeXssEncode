@@ -19,6 +19,15 @@ eg:
 ```
 a1@& <=> YTFAJg==
 ```
+
+* String <=> Base32
+
+eg:
+
+```
+a1@& <=> MEYUAJQ=
+```
+
 * String <=> Hex
 
 eg:

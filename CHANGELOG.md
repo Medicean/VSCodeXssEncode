@@ -21,3 +21,5 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - String to HTML10
 - String to HTML16
 - HTML to String
+- String to Base32
+- Base32 to String

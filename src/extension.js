@@ -6,6 +6,7 @@ const vscode = require('vscode');
 // your extension is activated the very first time the command is executed
 
 const base64 = require('./lib/base64');
+const base32 = require('./lib/base32');
 const hex = require('./lib/hex');
 const urlencode = require('./lib/urlencode');
 const ip = require('./lib/ip');
@@ -26,6 +27,8 @@ function activate(context) {
 	let transformers =  [
 		new base64.Base64ToStringTransformer(),
 		new base64.StringToBase64Transformer(),
+		new base32.Base32ToStringTransformer(),
+		new base32.StringToBase32Transformer(),
 		new hex.StringToHexTransformer(),
 		new hex.HexToStringTransformer(),
 		new urlencode.StringToEncodedUrlTransformer(),
