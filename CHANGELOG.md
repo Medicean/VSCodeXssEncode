@@ -17,3 +17,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - EncodedURL to String
 - IPv4 to Number
 - Number to IPv4
+- String to HTML Entities
+- String to HTML10
+- String to HTML16
+- HTML to String

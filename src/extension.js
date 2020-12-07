@@ -9,6 +9,7 @@ const base64 = require('./lib/base64');
 const hex = require('./lib/hex');
 const urlencode = require('./lib/urlencode');
 const ip = require('./lib/ip');
+const html = require('./lib/html');
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -32,6 +33,10 @@ function activate(context) {
 		new urlencode.EncodedUrlToStringTransformer(),
 		new ip.IPv4ToNumberTransformer(),
 		new ip.NumberToIPv4Transformer(),
+		new html.StringToHTMLEntitiesTransformer(),
+		new html.StringToHTML10Transformer(),
+		new html.StringToHTML16Transformer(),
+		new html.HTMLToStringTransformer(),
 	];
 
 	transformers.forEach(v => {
