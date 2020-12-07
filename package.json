@@ -35,7 +35,14 @@
 		"onCommand:xssencode.StringToHTMLEntities",
 		"onCommand:xssencode.StringToHTML10",
 		"onCommand:xssencode.StringToHTML16",
-		"onCommand:xssencode.HTMLToString"
+		"onCommand:xssencode.HTMLToString",
+		"onCommand:xssencode.StringToMD5",
+		"onCommand:xssencode.StringToMD5_16",
+		"onCommand:xssencode.StringToSHA1",
+		"onCommand:xssencode.StringToSHA224",
+		"onCommand:xssencode.StringToSHA256",
+		"onCommand:xssencode.StringToSHA384",
+		"onCommand:xssencode.StringToSHA512"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
@@ -114,6 +121,41 @@
 				"category": "XssEncode",
 				"command": "xssencode.HTMLToString",
 				"title": "HTML to String"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToMD5",
+				"title": "String to MD5"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToMD5_16",
+				"title": "String to MD5(16bit)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToSHA1",
+				"title": "String to SHA1"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToSHA224",
+				"title": "String to SHA224"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToSHA256",
+				"title": "String to SHA256"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToSHA384",
+				"title": "String to SHA384"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToSHA512",
+				"title": "String to SHA512"
 			}
 		]
 	},
