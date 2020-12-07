@@ -6,8 +6,7 @@ Convert the region you selected or convert all characters.
 
 ## Support
 
-* String <=> Base64
-* String <=> Base32
+* String <=> Base64, Base32, Base16
 * String <=> Hex
 * String <=> EncodedURL
 * String <=> Encoded URL All Characters
@@ -41,6 +40,14 @@ eg:
 
 ```
 a1@& <=> MEYUAJQ=
+```
+
+* String <=> Base16
+
+eg:
+
+```
+abc <=> 616263
 ```
 
 * String <=> Hex

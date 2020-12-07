@@ -4,6 +4,16 @@ All notable changes to the "xssencode" extension will be documented in this file
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+
+## [0.0.2] - 2020/12/7
+
+### Added
+
+- String <=> Base32
+- String <=> Base16
+- String => MD5 (32bit, 16bit)
+- String => SHA1, SHA224, SHA256, SHA384, SHA512
+
 ## [0.0.1] - 2020/11/24
 
 ### Added
@@ -21,10 +31,3 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - String to HTML10
 - String to HTML16
 - HTML to String
-
-## [0.0.2] - 2020/12/7
-
-- String to Base32
-- Base32 to String
-- String => MD5 (32bit, 16bit)
-- String => SHA1, SHA224, SHA256, SHA384, SHA512

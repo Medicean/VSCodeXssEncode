@@ -7,6 +7,7 @@ const vscode = require('vscode');
 
 const base64 = require('./lib/base64');
 const base32 = require('./lib/base32');
+const base16 = require('./lib/base16');
 const hex = require('./lib/hex');
 const urlencode = require('./lib/urlencode');
 const ip = require('./lib/ip');
@@ -30,6 +31,8 @@ function activate(context) {
 		new base64.StringToBase64Transformer(),
 		new base32.Base32ToStringTransformer(),
 		new base32.StringToBase32Transformer(),
+		new base16.StringToBase16Transformer(),
+		new base16.Base16ToStringTransformer(),
 		new hex.StringToHexTransformer(),
 		new hex.HexToStringTransformer(),
 		new urlencode.StringToEncodedUrlTransformer(),
