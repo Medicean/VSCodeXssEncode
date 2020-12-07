@@ -65,10 +65,11 @@ class Transformer {
         //
         if(failed.length != 0) {
             let message = util.format(
-                '%s selections could not be processed.',
+                '%s selections could not be processed.<br/>See more at Output Pannel.',
                 failed.length
             );
             vscode.window.showWarningMessage(message);
+            let outChannel = vscode.window.createOutputChannel("xssencode");
             for (let index = 0; index < failed.length; index++) {
                 const v = failed[index];
                 var tmpinput = v.input.replace(/\s+?/g,'');
@@ -82,8 +83,10 @@ class Transformer {
                     tmpinput.length > 10 ? `${tmpinput.slice(0,3)}...${tmpinput.slice(-3)}`: tmpinput,
                     v.err.toString(),
                 )
+                outChannel.appendLine(msg)
                 console.warn(msg)
             }
+            outChannel.show()
         }
     }
 }
