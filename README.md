@@ -17,6 +17,11 @@ Convert the region you selected or convert all characters.
 * (HTML Entities, HTML10, HTML16) => String
 * String => MD5 (32bit, 16bit)
 * String => SHA1, SHA224, SHA256, SHA384, SHA512
+* String => StringFromCharCode (10 Decimal, 8 Octal, 16 Hex)
+* String => PHP CHR (10 Decimal, 8 Octal, 16 Hex)
+* String => Python chr (10 Decimal, 8 Octal, 16 Hex)
+* String => Oracle CHR (10 Decimal, 8 Octal, 16 Hex)
+* String => MySQL CHAR (10 Decimal, 8 Octal, 16 Hex)
 
 ## ChangeLog
 
@@ -137,4 +142,54 @@ eg:
 123 => a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
 123 => 9a0a82f0c0cf31470d7affede3406cc9aa8410671520b727044eda15b4c25532a9b5cd8aaf9cec4919d76255b6bfb00f
 123 => 3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c047e7ab1c1eb8b85103e3be7ba613b31bb5c9c36214dc9f14a42fd7a2fdb84856bca5c44c2
+```
+
+* String => StringFromCharCode (10 Decimal, 8 Octal, 16 Hex)
+
+eg:
+
+```
+abc => String.fromCharCode(97,98,99)
+abc => String.fromCharCode(0141,0142,0143)
+abc => String.fromCharCode(0x61,0x62,0x63)
+```
+
+* String => PHP CHR (10 Decimal, 8 Octal, 16 Hex)
+
+eg:
+
+```
+abc => ChR(97).ChR(98).cHr(99)
+abc => ChR(0141).CHR(0142).cHR(0143)
+abc => chr(0x61).Chr(0x62).CHr(0x63)
+```
+
+* String => Python chr (10 Decimal, 8 Octal, 16 Hex)
+
+eg:
+
+```
+abc => chr(97)+chr(98)+chr(99)
+abc => chr(0141)+chr(0142)+chr(0143)
+abc => chr(0x61)+chr(0x62)+chr(0x63)
+```
+
+* String => Oracle CHR (10 Decimal, 8 Octal, 16 Hex)
+
+eg:
+
+```
+abc => chr(97)||chR(98)||Chr(99)
+abc => CHR(0141)||cHR(0142)||cHR(0143)
+abc => cHR(0x61)||ChR(0x62)||chr(0x63)
+```
+
+* String => MySQL CHAR (10 Decimal, 8 Octal, 16 Hex)
+
+eg:
+
+```
+abc => CHAr(97,98,99)
+abc => ChAR(0141,0142,0143)
+abc => ChAR(0x61,0x62,0x63)
 ```

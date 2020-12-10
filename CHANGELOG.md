@@ -13,6 +13,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - String <=> Base16
 - String => MD5 (32bit, 16bit)
 - String => SHA1, SHA224, SHA256, SHA384, SHA512
+- String => StringFromCharCode (10 Decimal, 8 Octal, 16 Hex)
+- String => PHP CHR (10 Decimal, 8 Octal, 16 Hex)
+- String => Python chr (10 Decimal, 8 Octal, 16 Hex)
+- String => Oracle CHR (10 Decimal, 8 Octal, 16 Hex)
+- String => MySQL CHAR (10 Decimal, 8 Octal, 16 Hex)
 
 ## [0.0.1] - 2020/11/24
 

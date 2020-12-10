@@ -13,6 +13,7 @@ const urlencode = require('./lib/urlencode');
 const ip = require('./lib/ip');
 const html = require('./lib/html');
 const hash = require('./lib/hash');
+const chr = require('./lib/chr');
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -46,7 +47,22 @@ function activate(context) {
 		new html.HTMLToStringTransformer(),
 		new hash.StringToMD5Transformer(),
 		new hash.StringToMD5_16Transformer(),
-		new hash.StringToSHA1Transformer()
+		new hash.StringToSHA1Transformer(),
+		new chr.StringFromCharCodeTransformer(10),
+		new chr.StringFromCharCodeTransformer(8),
+		new chr.StringFromCharCodeTransformer(16),
+		new chr.StringToPHPCHRTransformer(10),
+		new chr.StringToPHPCHRTransformer(8),
+		new chr.StringToPHPCHRTransformer(16),
+		new chr.StringToPythonCHRTransformer(10),
+		new chr.StringToPythonCHRTransformer(8),
+		new chr.StringToPythonCHRTransformer(16),
+		new chr.StringToOracleCHRTransformer(10),
+		new chr.StringToOracleCHRTransformer(8),
+		new chr.StringToOracleCHRTransformer(16),
+		new chr.StringToMySQLCHARTransformer(10),
+		new chr.StringToMySQLCHARTransformer(8),
+		new chr.StringToMySQLCHARTransformer(16),
 	];
 
 	transformers.forEach(v => {

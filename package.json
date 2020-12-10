@@ -44,7 +44,22 @@
 		"onCommand:xssencode.StringToSHA224",
 		"onCommand:xssencode.StringToSHA256",
 		"onCommand:xssencode.StringToSHA384",
-		"onCommand:xssencode.StringToSHA512"
+		"onCommand:xssencode.StringToSHA512",
+		"onCommand:xssencode.StringFromCharCode",
+		"onCommand:xssencode.StringFromCharCode8",
+		"onCommand:xssencode.StringFromCharCode16",
+		"onCommand:xssencode.StringToPHPCHR",
+		"onCommand:xssencode.StringToPHPCHR8",
+		"onCommand:xssencode.StringToPHPCHR16",
+		"onCommand:xssencode.StringToPythonCHR",
+		"onCommand:xssencode.StringToPythonCHR8",
+		"onCommand:xssencode.StringToPythonCHR16",
+		"onCommand:xssencode.StringToOracleCHR",
+		"onCommand:xssencode.StringToOracleCHR8",
+		"onCommand:xssencode.StringToOracleCHR16",
+		"onCommand:xssencode.StringToMySQLCHAR",
+		"onCommand:xssencode.StringToMySQLCHAR8",
+		"onCommand:xssencode.StringToMySQLCHAR16"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
@@ -168,6 +183,81 @@
 				"category": "XssEncode",
 				"command": "xssencode.StringToSHA512",
 				"title": "String to SHA512"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringFromCharCode",
+				"title": "StringFromCharCode"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringFromCharCode8",
+				"title": "StringFromCharCode8 (Octal)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringFromCharCode16",
+				"title": "StringFromCharCode16 (Hex)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToPHPCHR",
+				"title": "String to PHP CHR"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToPHPCHR8",
+				"title": "String to PHP CHR8 (Octal)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToPHPCHR16",
+				"title": "String to PHP CHR16 (Hex)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToPythonCHR",
+				"title": "String to Python CHR"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToPythonCHR8",
+				"title": "String to Python CHR8 (Octal)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToPythonCHR16",
+				"title": "String to Python CHR16 (Hex)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToOracleCHR",
+				"title": "String to Oracle CHR"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToOracleCHR8",
+				"title": "String to Oracle CHR8 (Octal)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToOracleCHR16",
+				"title": "String to Oracle CHR16 (Hex)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToMySQLCHAR",
+				"title": "String to MySQL CHAR"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToMySQLCHAR8",
+				"title": "String to MySQL CHAR8 (Octal)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToMySQLCHAR16",
+				"title": "String to MySQL CHAR16 (Hex)"
 			}
 		]
 	},
