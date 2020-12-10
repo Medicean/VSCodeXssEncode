@@ -64,6 +64,7 @@ function activate(context) {
 		new chr.StringToMySQLCHARTransformer(10),
 		new chr.StringToMySQLCHARTransformer(8),
 		new chr.StringToMySQLCHARTransformer(16),
+		new chr.UnChrTransformer(),
 		new rot13.StringToRot13Transformer(),
 		new rot13.Rot13ToStringTransformer(),
 	];

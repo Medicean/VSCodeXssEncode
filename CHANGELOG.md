@@ -18,6 +18,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - String => Python chr (10 Decimal, 8 Octal, 16 Hex)
 - String => Oracle CHR (10 Decimal, 8 Octal, 16 Hex)
 - String => MySQL CHAR (10 Decimal, 8 Octal, 16 Hex)
+- UnChr (StringFromCharCode, CHR, CHAR => String)
 - String <=> Rot13
 
 ## [0.0.1] - 2020/11/24

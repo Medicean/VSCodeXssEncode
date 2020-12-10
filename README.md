@@ -22,6 +22,7 @@ Convert the region you selected or convert all characters.
 * String => Python chr (10 Decimal, 8 Octal, 16 Hex)
 * String => Oracle CHR (10 Decimal, 8 Octal, 16 Hex)
 * String => MySQL CHAR (10 Decimal, 8 Octal, 16 Hex)
+* UnChr (StringFromCharCode, CHR, CHAR => String)
 * String <=> Rot13
 ## ChangeLog
 
@@ -192,6 +193,15 @@ eg:
 abc => CHAr(97,98,99)
 abc => ChAR(0141,0142,0143)
 abc => ChAR(0x61,0x62,0x63)
+```
+
+* UnChr (StringFromCharCode, CHR, CHAR => String)
+
+eg:
+
+```
+chr(97)+chr(98)+chr(99) => abc
+ChR(97).CHR(0141).chr(0x61) => aaa
 ```
 
 * String <=> Rot13

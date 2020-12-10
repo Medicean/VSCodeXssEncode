@@ -306,12 +306,40 @@ class StringToOracleCHRTransformer extends Transformer {
     }
 }
 
-
+class UnChrTransformer extends Transformer {
+    get command () {
+        return 'UnChr'
+    }
+    get label() {
+        return 'UnChr (Chr to String)'
+    }
+    /**
+     * @param {string} input
+     * @returns {boolean}
+     */
+    check(input) {
+        return Buffer.from(input).length != 0;
+    }
+    /**
+     * @param {string} input
+     * @returns {string}
+     */
+    transform(input) {
+        const convert = (s) => {
+            s=s.replace(/(\)(\.|\+|\|\|)cha?r\()/ig, ',');
+            s=s.replace(/cha?r\(/ig, 'String.fromCharCode(');
+            return eval(s);
+        }
+        var output = convert(input);
+		return output;
+	}
+}
 
 module.exports = {
     StringFromCharCodeTransformer,
     StringToPHPCHRTransformer,
     StringToPythonCHRTransformer,
     StringToOracleCHRTransformer,
-    StringToMySQLCHARTransformer
+    StringToMySQLCHARTransformer,
+    UnChrTransformer
 }

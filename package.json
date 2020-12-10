@@ -60,6 +60,7 @@
 		"onCommand:xssencode.StringToMySQLCHAR",
 		"onCommand:xssencode.StringToMySQLCHAR8",
 		"onCommand:xssencode.StringToMySQLCHAR16",
+		"onCommand:xssencode.UnChr",
 		"onCommand:xssencode.StringToRot13",
 		"onCommand:xssencode.Rot13ToString"
 	],
@@ -260,6 +261,11 @@
 				"category": "XssEncode",
 				"command": "xssencode.StringToMySQLCHAR16",
 				"title": "String to MySQL CHAR16 (Hex)"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.UnChr",
+				"title": "UnChr (Chr to String)"
 			},
 			{
 				"category": "XssEncode",
