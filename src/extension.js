@@ -14,6 +14,7 @@ const ip = require('./lib/ip');
 const html = require('./lib/html');
 const hash = require('./lib/hash');
 const chr = require('./lib/chr');
+const rot13 = require('./lib/rot13');
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -63,6 +64,8 @@ function activate(context) {
 		new chr.StringToMySQLCHARTransformer(10),
 		new chr.StringToMySQLCHARTransformer(8),
 		new chr.StringToMySQLCHARTransformer(16),
+		new rot13.StringToRot13Transformer(),
+		new rot13.Rot13ToStringTransformer(),
 	];
 
 	transformers.forEach(v => {
