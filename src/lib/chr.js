@@ -326,9 +326,10 @@ class UnChrTransformer extends Transformer {
      */
     transform(input) {
         const convert = (s) => {
-            s=s.replace(/(\)(\.|\+|\|\|)cha?r\()/ig, ',');
+            s=s.replace(/(\)(\s*)?(\.|\+|\|\|)(\s*)?cha?r\()/ig, ',');
             s=s.replace(/cha?r\(/ig, 'String.fromCharCode(');
-            return eval(s);
+            var m = s.match(/String.fromCharCode\([\d,\x\s]+?\)/g);
+            return eval(m[0]);
         }
         var output = convert(input);
 		return output;
