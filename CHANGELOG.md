@@ -21,6 +21,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - UnChr (StringFromCharCode, CHR, CHAR => String)
 - String <=> Rot13
 - String <=> Unicode
+- String <=> Morse
 
 ## [0.0.1] - 2020/11/24
 

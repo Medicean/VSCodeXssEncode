@@ -25,6 +25,7 @@ Convert the region you selected or convert all characters.
 * UnChr (StringFromCharCode, CHR, CHAR => String)
 * String <=> Rot13
 * String <=> Unicode
+* String <=> Morse
 
 ## ChangeLog
 
@@ -220,4 +221,18 @@ eg:
 
 ```
 转为 unicode <=> \u8f6c\u4e3a\u0020\u0075\u006e\u0069\u0063\u006f\u0064\u0065
+```
+
+* String <=> Morse
+
+> short => `.`
+> long => `-`
+> space => `<space>` or `/`
+
+eg:
+
+```
+MORSE电码 <=> -- --- .-. ... . ---.-.-..--.-.- ----..........-
+
+--/---/.-./..././---.-.-..--.-.-/----..........- => MORSE电码
 ```

@@ -64,7 +64,9 @@
 		"onCommand:xssencode.StringToRot13",
 		"onCommand:xssencode.Rot13ToString",
 		"onCommand:xssencode.StringToUnicode",
-		"onCommand:xssencode.UnicodeToString"
+		"onCommand:xssencode.UnicodeToString",
+		"onCommand:xssencode.StringToMorse",
+		"onCommand:xssencode.MorseToString"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
@@ -288,6 +290,16 @@
 				"category": "XssEncode",
 				"command": "xssencode.UnicodeToString",
 				"title": "Unicode to String"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToMorse",
+				"title": "String to Morse"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.MorseToString",
+				"title": "Morse to String"
 			}
 		]
 	},
@@ -308,7 +320,8 @@
 		"vscode-test": "^1.4.0"
 	},
 	"dependencies": {
-		"entities": "^2.1.0"
+		"entities": "^2.1.0",
+		"xmorse": "^1.0.0"
 	},
 	"bugs": {
 		"url": "https://github.com/Medicean/VSCodeXssEncode/issues"
