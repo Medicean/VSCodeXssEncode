@@ -62,7 +62,9 @@
 		"onCommand:xssencode.StringToMySQLCHAR16",
 		"onCommand:xssencode.UnChr",
 		"onCommand:xssencode.StringToRot13",
-		"onCommand:xssencode.Rot13ToString"
+		"onCommand:xssencode.Rot13ToString",
+		"onCommand:xssencode.StringToUnicode",
+		"onCommand:xssencode.UnicodeToString"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
@@ -276,6 +278,16 @@
 				"category": "XssEncode",
 				"command": "xssencode.Rot13ToString",
 				"title": "Rot13 to String"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToUnicode",
+				"title": "String to Unicode"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.UnicodeToString",
+				"title": "Unicode to String"
 			}
 		]
 	},

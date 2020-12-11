@@ -15,6 +15,7 @@ const html = require('./lib/html');
 const hash = require('./lib/hash');
 const chr = require('./lib/chr');
 const rot13 = require('./lib/rot13');
+const unicode = require('./lib/unicode');
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -67,6 +68,8 @@ function activate(context) {
 		new chr.UnChrTransformer(),
 		new rot13.StringToRot13Transformer(),
 		new rot13.Rot13ToStringTransformer(),
+		new unicode.StringToUnicodeTransformer(),
+		new unicode.UnicodeToStringTransformer(),
 	];
 
 	transformers.forEach(v => {

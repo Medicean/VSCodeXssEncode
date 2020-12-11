@@ -155,7 +155,7 @@ class EncodedUrlToStringTransformer extends Transformer {
      * @returns {string}
      */
     transform(input) {
-		var output = decodeURIComponent(input);
+		var output = unescape(input);
 		return output;
 	}
 }

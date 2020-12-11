@@ -24,6 +24,8 @@ Convert the region you selected or convert all characters.
 * String => MySQL CHAR (10 Decimal, 8 Octal, 16 Hex)
 * UnChr (StringFromCharCode, CHR, CHAR => String)
 * String <=> Rot13
+* String <=> Unicode
+
 ## ChangeLog
 
 See more at [ChangeLog](./CHANGELOG.md)
@@ -210,4 +212,12 @@ eg:
 
 ```
 abc <=> nop
+```
+
+* String <=> Unicode
+
+eg:
+
+```
+转为 unicode <=> \u8f6c\u4e3a\u0020\u0075\u006e\u0069\u0063\u006f\u0064\u0065
 ```

@@ -20,6 +20,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - String => MySQL CHAR (10 Decimal, 8 Octal, 16 Hex)
 - UnChr (StringFromCharCode, CHR, CHAR => String)
 - String <=> Rot13
+- String <=> Unicode
 
 ## [0.0.1] - 2020/11/24
 
