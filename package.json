@@ -3,7 +3,7 @@
 	"displayName": "xssencode",
 	"publisher": "Medicean",
 	"description": "Converts characters from one encoding to another using a transformation. This tool will help you encode payloads in testing sql injections, XSS holes and site security.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"author": {
 		"name": "Medicean",
 		"email": "Medici.Yan@gmail.com",
@@ -66,7 +66,11 @@
 		"onCommand:xssencode.StringToUnicode",
 		"onCommand:xssencode.UnicodeToString",
 		"onCommand:xssencode.StringToMorse",
-		"onCommand:xssencode.MorseToString"
+		"onCommand:xssencode.MorseToString",
+		"onCommand:xssencode.StringToBash",
+		"onCommand:xssencode.StringToPowerShell",
+		"onCommand:xssencode.StringToPython",
+		"onCommand:xssencode.StringToPerl"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
@@ -300,6 +304,26 @@
 				"category": "XssEncode",
 				"command": "xssencode.MorseToString",
 				"title": "Morse to String"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToBash",
+				"title": "String to Bash"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToPowerShell",
+				"title": "String to PowerShell"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToPython",
+				"title": "String to Python"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToPerl",
+				"title": "String to Perl"
 			}
 		]
 	},
