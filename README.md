@@ -242,26 +242,13 @@ MORSE电码 <=> -- --- .-. ... . ---.-.-..--.-.- ----..........-
 --/---/.-./..././---.-.-..--.-.-/----..........- => MORSE电码
 ```
 
-* String => Bash
+* String => Bash/PowerShell/Python/Perl
+
+> java.lang.Runtime.exec() Payload Workarounds
 
 ```
 ls -al / => bash -c {echo,bHMgLWFsIC8g}|{base64,-d}|{bash,-i}
-```
-
-* String => PowerShell
-
-```
 net user => powershell.exe -NonI -W Hidden -NoP -Exec Bypass -Enc bgBlAHQAIAB1AHMAZQByAA==
-```
-
-* String => Python
-
-```
 ls -al / => python -c exec('bmV0IHVzZXJscyAtYWwgLw=='.decode('base64'))
-```
-
-* String => Perl
-
-```
 ls -al / => perl -MMIME::Base64 -e eval(decode_base64('bmV0IHVzZXJscyAtYWwgLw=='))
 ```

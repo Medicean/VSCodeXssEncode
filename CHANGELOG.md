@@ -8,6 +8,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+> java.lang.Runtime.exec() Payload Workarounds
+
 - String => Bash
 - String => PowerShell
 - String => Python
