@@ -18,6 +18,7 @@ const rot13 = require('./lib/rot13');
 const unicode = require('./lib/unicode');
 const morse = require('./lib/morse');
 const command = require('./lib/command');
+const strcase = require('./lib/case');
 
 
 /**
@@ -79,6 +80,7 @@ function activate(context) {
 		new command.StringToPowerShellTransformer(),
 		new command.StringToPythonTransformer(),
 		new command.StringToPerlTransformer(),
+		new strcase.StringToRandomCaseTransformer(),
 	];
 
 	transformers.forEach(v => {

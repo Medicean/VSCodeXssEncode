@@ -30,6 +30,7 @@ Convert the region you selected or convert all characters.
 * String => PowerShell
 * String => Python
 * String => Perl
+* String => RandomCase
 
 
 ## ChangeLog
@@ -251,4 +252,13 @@ ls -al / => bash -c {echo,bHMgLWFsIC8g}|{base64,-d}|{bash,-i}
 net user => powershell.exe -NonI -W Hidden -NoP -Exec Bypass -Enc bgBlAHQAIAB1AHMAZQByAA==
 ls -al / => python -c exec('bmV0IHVzZXJscyAtYWwgLw=='.decode('base64'))
 ls -al / => perl -MMIME::Base64 -e eval(decode_base64('bmV0IHVzZXJscyAtYWwgLw=='))
+```
+
+* String => RandomCase
+
+eg:
+
+```
+phpinfo(); => phPiNfo();
+phpinfo(); => PhpINFo();
 ```

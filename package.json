@@ -70,7 +70,8 @@
 		"onCommand:xssencode.StringToBash",
 		"onCommand:xssencode.StringToPowerShell",
 		"onCommand:xssencode.StringToPython",
-		"onCommand:xssencode.StringToPerl"
+		"onCommand:xssencode.StringToPerl",
+		"onCommand:xssencode.StringToRandomCase"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
@@ -324,6 +325,11 @@
 				"category": "XssEncode",
 				"command": "xssencode.StringToPerl",
 				"title": "String to Perl"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToRandomCase",
+				"title": "String to Random Case"
 			}
 		]
 	},
