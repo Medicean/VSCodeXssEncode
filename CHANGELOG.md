@@ -9,6 +9,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Added
 
 - String => RandomCase
+- String <=> Quoted Printable
+- String Reverse
+- Reverse Shell Generator
 
 ## [0.0.3] - 2021/04/04
 
