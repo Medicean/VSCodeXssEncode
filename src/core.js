@@ -33,6 +33,7 @@ class Transformer {
         _self.textEditor = textEditor;
         _self.edit = edit;
         let failed = [];
+        // process each selection
         for (let selectionIndex = 0; selectionIndex < _self.textEditor.selections.length; selectionIndex++) {
             let selection = _self.textEditor.selections[selectionIndex];
             let range = new vscode.Range(selection.start, selection.end);

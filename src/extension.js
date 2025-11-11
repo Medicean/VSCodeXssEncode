@@ -47,6 +47,7 @@ function activate(context) {
 		new urlencode.EncodedUrlToStringTransformer(),
 		new ip.IPv4ToNumberTransformer(),
 		new ip.NumberToIPv4Transformer(),
+		new ip.ReverseShellTransformer(),
 		new html.StringToHTMLEntitiesTransformer(),
 		new html.StringToHTML10Transformer(),
 		new html.StringToHTML16Transformer(),
@@ -85,6 +86,8 @@ function activate(context) {
 		new command.StringToPerlTransformer(),
 		new strcase.StringToRandomCaseTransformer(),
 		new str.StringReverseTransformer(),
+		new str.StringToQuotedPrintableTransformer(),
+		new str.QuotedPrintableToStringTransformer(),
 	];
 
 	transformers.forEach(v => {

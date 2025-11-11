@@ -34,6 +34,7 @@
 		"onCommand:xssencode.EncodedUrlToString",
 		"onCommand:xssencode.IPv4ToNumber",
 		"onCommand:xssencode.NumberToIPv4",
+		"onCommand:xssencode.ReverseShell",
 		"onCommand:xssencode.StringToHTMLEntities",
 		"onCommand:xssencode.StringToHTML10",
 		"onCommand:xssencode.StringToHTML16",
@@ -72,7 +73,9 @@
 		"onCommand:xssencode.StringToPython",
 		"onCommand:xssencode.StringToPerl",
 		"onCommand:xssencode.StringToRandomCase",
-		"onCommand:xssencode.StringReverse"
+		"onCommand:xssencode.StringReverse",
+		"onCommand:xssencode.StringToQuotedPrintable",
+		"onCommand:xssencode.QuotedPrintableToString"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
@@ -336,6 +339,21 @@
 				"category": "XssEncode",
 				"command": "xssencode.StringReverse",
 				"title": "String Reverse"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.ReverseShell",
+				"title": "Reverse Shell Generator"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringToQuotedPrintable",
+				"title": "String to Quoted-Printable"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.QuotedPrintableToString",
+				"title": "Quoted-Printable to String"
 			}
 		]
 	},
