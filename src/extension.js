@@ -19,7 +19,7 @@ const unicode = require('./lib/unicode');
 const morse = require('./lib/morse');
 const command = require('./lib/command');
 const strcase = require('./lib/case');
-
+const str = require('./lib/str');
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -54,6 +54,9 @@ function activate(context) {
 		new hash.StringToMD5Transformer(),
 		new hash.StringToMD5_16Transformer(),
 		new hash.StringToSHA1Transformer(),
+		new hash.StringToSHA256Transformer(),
+		new hash.StringToSHA384Transformer(),
+		new hash.StringToSHA512Transformer(),
 		new chr.StringFromCharCodeTransformer(10),
 		new chr.StringFromCharCodeTransformer(8),
 		new chr.StringFromCharCodeTransformer(16),
@@ -81,6 +84,7 @@ function activate(context) {
 		new command.StringToPythonTransformer(),
 		new command.StringToPerlTransformer(),
 		new strcase.StringToRandomCaseTransformer(),
+		new str.StringReverseTransformer(),
 	];
 
 	transformers.forEach(v => {
@@ -89,7 +93,6 @@ function activate(context) {
 		}));
 	});
 }
-exports.activate = activate;
 
 // this method is called when your extension is deactivated
 function deactivate() {}

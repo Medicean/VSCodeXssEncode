@@ -71,7 +71,8 @@
 		"onCommand:xssencode.StringToPowerShell",
 		"onCommand:xssencode.StringToPython",
 		"onCommand:xssencode.StringToPerl",
-		"onCommand:xssencode.StringToRandomCase"
+		"onCommand:xssencode.StringToRandomCase",
+		"onCommand:xssencode.StringReverse"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
@@ -330,28 +331,34 @@
 				"category": "XssEncode",
 				"command": "xssencode.StringToRandomCase",
 				"title": "String to Random Case"
+			},
+			{
+				"category": "XssEncode",
+				"command": "xssencode.StringReverse",
+				"title": "String Reverse"
 			}
 		]
 	},
 	"scripts": {
 		"lint": "eslint .",
-		"pretest": "npm run lint",
+		"pretest": "pnpm run lint",
 		"test": "node ./test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.0.0",
-		"@types/node": "^12.11.7",
-		"@types/vscode": "^1.30.0",
-		"eslint": "^7.9.0",
-		"glob": "^7.1.6",
-		"mocha": "^8.1.3",
-		"typescript": "^4.0.2",
-		"vscode-test": "^1.4.0"
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^8.2.3",
+		"@types/node": "^12.20.55",
+		"@types/vscode": "^1.105.0",
+		"eslint": "^7.32.0",
+		"glob": "^7.2.3",
+		"mocha": "^8.4.0",
+		"typescript": "^4.9.5",
+		"vscode-test": "^1.6.1"
 	},
 	"dependencies": {
-		"entities": "^2.1.0",
-		"xmorse": "^1.0.0"
+		"entities": "^2.2.0",
+		"xmorse": "^1.0.0",
+		"xssencode": "link:"
 	},
 	"bugs": {
 		"url": "https://github.com/Medicean/VSCodeXssEncode/issues"
@@ -360,5 +367,6 @@
 		"type": "git",
 		"url": "https://github.com/Medicean/VSCodeXssEncode.git"
 	},
-	"homepage": "https://github.com/Medicean/VSCodeXssEncode/blob/master/README.md"
+	"homepage": "https://github.com/Medicean/VSCodeXssEncode/blob/master/README.md",
+	"packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b"
 }

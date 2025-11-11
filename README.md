@@ -31,6 +31,8 @@ Convert the region you selected or convert all characters.
 * String => Python
 * String => Perl
 * String => RandomCase
+* String <=> Quoted Printable
+* String Reverse
 
 
 ## ChangeLog

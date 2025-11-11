@@ -4,7 +4,7 @@ const Transformer = require('../core');
 const jscrypto = require('crypto');
 
 class StringToMD5Transformer extends Transformer {
-    algorithm = "md5"
+    algorithm = "md5";
     get command () {
         return 'StringToMD5';
     }
