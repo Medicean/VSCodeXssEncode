@@ -3,7 +3,7 @@
 	"displayName": "xssencode",
 	"publisher": "Medicean",
 	"description": "Converts characters from one encoding to another using a transformation. This tool will help you encode payloads in testing sql injections, XSS holes and site security.",
-	"version": "0.0.5",
+	"version": "0.0.4",
 	"author": {
 		"name": "Medicean",
 		"email": "Medici.Yan@gmail.com",
