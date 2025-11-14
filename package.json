@@ -368,7 +368,7 @@
 		"@types/glob": "^7.2.0",
 		"@types/mocha": "^8.2.3",
 		"@types/node": "^12.20.55",
-		"@types/vscode": "^1.106.0",
+		"@types/vscode": "^1.105.0",
 		"@vscode/test-electron": "^2.5.2",
 		"eslint": "^9.39.1",
 		"glob": "^9.3.5",

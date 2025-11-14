@@ -32,7 +32,7 @@ devDependencies:
     specifier: ^12.20.55
     version: 12.20.55
   '@types/vscode':
-    specifier: ^1.106.0
+    specifier: ^1.105.0
     version: 1.106.0
   '@vscode/test-electron':
     specifier: ^2.5.2
