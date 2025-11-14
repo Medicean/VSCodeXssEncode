@@ -372,13 +372,12 @@
 		"@vscode/test-electron": "^2.5.2",
 		"eslint": "^9.39.1",
 		"glob": "^9.3.5",
-		"mocha": "^8.4.0",
+		"mocha": "^11.7.5",
 		"typescript": "^4.9.5"
 	},
 	"dependencies": {
 		"entities": "^2.2.0",
-		"xmorse": "^1.0.0",
-		"xssencode": "link:"
+		"xmorse": "^1.0.0"
 	},
 	"bugs": {
 		"url": "https://github.com/Medicean/VSCodeXssEncode/issues"
@@ -387,6 +386,5 @@
 		"type": "git",
 		"url": "https://github.com/Medicean/VSCodeXssEncode.git"
 	},
-	"homepage": "https://github.com/Medicean/VSCodeXssEncode/blob/master/README.md",
-	"packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b"
+	"homepage": "https://github.com/Medicean/VSCodeXssEncode/blob/master/README.md"
 }
