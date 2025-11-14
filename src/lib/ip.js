@@ -18,7 +18,7 @@ class IPv4ToNumberTransformer extends Transformer {
         if (re.test(input)) {
             return true;
         }
-        return false;
+        throw Error("Invalid IPv4 address format");
     }
     /**
      * @param {string} input
@@ -79,7 +79,7 @@ class ReverseShellTransformer extends Transformer {
         // Basic check for IP:PORT format
         var re = /^(?:(?:\d|[01]?\d\d|2[0-4]\d|25[0-5])\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d|\d)(?:\:(?:\d{1,4}|[1-5]\d{4}|6[0-4]\d{3}|65[0-4]\d{2}|655[0-3]\d|6553[0-5]))?$/
         if (!re.test(input)) {
-            return false;
+            throw Error("Invalid IP[:PORT] format");
         }
         return true;
     }

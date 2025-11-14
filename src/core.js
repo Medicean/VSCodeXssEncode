@@ -44,20 +44,29 @@ class Transformer {
             }
             let input = _self.textEditor.document.getText(range);
             let output = input;
-            if(_self.check(input) == true) {
-                try {
-                    output = _self.transform(input);
-                    _self.edit.replace(range, output);
-                } catch (error) {
+            try {
+                let checkresult = _self.check(input);
+                if (checkresult === true) {
+                    try {
+                        output = _self.transform(input);
+                        _self.edit.replace(range, output);
+                    } catch (error) {
+                        failed.push({
+                            err: error,
+                            range: range,
+                            input: input
+                        })
+                    }
+                } else {
                     failed.push({
-                        err: error,
+                        err: 'CheckFail',
                         range: range,
                         input: input
                     })
                 }
-            } else {
+            } catch (error) {
                 failed.push({
-                    err: 'CheckFail',
+                    err: 'CheckException:' + error.toString(),
                     range: range,
                     input: input
                 })
